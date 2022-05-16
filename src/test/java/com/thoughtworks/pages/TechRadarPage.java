@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class TechRadarPage {
-    private final WebDriver driver;
+public class TechRadarPage extends Page {
 
     public TechRadarPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public WebElement getDownloadButtonOnNarBar() {
